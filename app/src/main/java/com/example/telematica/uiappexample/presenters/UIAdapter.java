@@ -1,4 +1,4 @@
-package com.example.telematica.uiappexample;
+package com.example.telematica.uiappexample.presenters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.telematica.uiappexample.R;
 import com.example.telematica.uiappexample.models.Libro;
 
 import java.util.List;

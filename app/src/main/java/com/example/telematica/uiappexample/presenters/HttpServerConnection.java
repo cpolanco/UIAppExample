@@ -1,4 +1,8 @@
-package com.example.telematica.uiappexample.connection;
+package com.example.telematica.uiappexample.presenters;
+
+import android.app.Activity;
+
+import com.example.telematica.uiappexample.ui.views.ViewInter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,8 +19,14 @@ import java.net.URL;
  */
 public class HttpServerConnection {
 
+
+    private Activity mContext;
+    private ViewInter mViewInter;
+
     public String connectToServer(String myUrl, int timeOut){
         try {
+            this.mContext = mContext;
+            this.mViewInter = mViewInter;
             URL url = new URL(myUrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
